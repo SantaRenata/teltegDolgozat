@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'telteg';
+  aside !:number;
+  bside !:number;
+  area !:number;
+  edited = false;
+
+  calcArea():void{
+    let area = 2*this.aside*this.bside;
+    this.area = area;
+    this.edited = true;
+  }
 }

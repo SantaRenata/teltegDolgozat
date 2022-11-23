@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Feladat 0354</h1>
+    <h2>Két egyenlő oldalú telek terület számítása</h2>
+
+    <div class="teglalap">
+        <div>
+            <label for="aside" class="form-label">A oldal:</label>
+            <input type="text" class="form-control" [(ngModel)] = "aside" id="aside">
+        </div>
+        <div class="mb-3">
+            <label for="bside" class="form-label">B oldal: </label>
+            <input type="text" class="form-control" [(ngModel)] = "bside" id="bside">
+        </div>
+
+        <button class="btn btn-dark mb-2" (click)="calcArea()">Számít</button>
+
+        <div class="mb-3" *ngIf="edited">
+            <label for="result" class="form-label" >Terület: </label>
+            <input type="text" class="form-control" [(ngModel)] = "area" disabled>
+        </div>
+    </div>
+
+    <div class="bg-secondary text-center">Sánta Renáta Diána, Szoft II N, 2022.11.23</div>
+
+</div>
